@@ -58,7 +58,7 @@ input:focus {
     width: 100%;
 }
 
-button {
+#calculate-btn {
     display: block;
     background-color: #9333ea;
     border: none;
@@ -67,6 +67,17 @@ button {
     padding: 15px 40px;
     font-size: 20px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#calculate-btn:hover:enabled {
+    background-color: #7e22ce;
+}
+
+#calculate-btn:disabled {
+    background-color: #d3d0d6;
+    cursor: not-allowed;
+    color: #666;
 }
 
 #result {
